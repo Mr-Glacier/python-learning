@@ -28,6 +28,17 @@ print(listA)
 listA.insert(0, 'number')
 print(listA)
 
+#   处理列表数据
+fav_movies = ['the happy dog', 'love is all']
+print(fav_movies[0])
+print(fav_movies[1])
 
+for each_flick in fav_movies:
+    print(each_flick)
 
+count = 0
+while count < len(fav_movies):
+    print(fav_movies[count])
+    count = count+1
 
+#在列表中
