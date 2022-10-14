@@ -42,3 +42,14 @@ while count < len(fav_movies):
     count = count+1
 
 # 在列表中存储列表
+listB = [
+    'the movies is great', 2022, 'i love it',
+    [
+        'ok', 'maybe you will love it',
+        [
+            'sure i will'
+        ]
+    ]
+]
+print(listB[3][2][0])
+print(listB)
