@@ -39,7 +39,7 @@ for each_flick in fav_movies:
 count = 0
 while count < len(fav_movies):
     print(fav_movies[count])
-    count = count+1
+    count = count + 1
 
 # 在列表中存储列表
 listB = [
@@ -53,3 +53,26 @@ listB = [
 ]
 print(listB[3][2][0])
 print(listB)
+for each_item in listB:
+    print(each_item)
+
+#   列表中查找列表
+names = ['kobe', 'jams']
+# isinstance(name,class)判断某数据，是否某类型数据，返回bool
+isinstance(names, list)
+print(isinstance(names, list))
+num_names = len(names)
+isinstance(num_names, list)
+print(isinstance(num_names, list))
+
+print(1111)
+for each_itema in listB:
+    if isinstance(each_itema, list):
+        for nexted_item in each_itema:
+            if isinstance(nexted_item,list):
+                for tired_item in nexted_item:
+                    print(tired_item)
+            else:print(nexted_item)
+    else:
+        print(each_itema)
+# 循环嵌套恶心，在后续编程中尽量避免使用循环嵌套
