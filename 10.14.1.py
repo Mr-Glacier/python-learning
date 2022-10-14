@@ -41,4 +41,4 @@ while count < len(fav_movies):
     print(fav_movies[count])
     count = count+1
 
-#在列表中
+# 在列表中存储列表
